@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    }
+
+html {
+        font-size: 62.5%;
+        font-family: 'Alfa Slab One', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 280px;
+    text-align: center;
+}
+
+.header-image-wrapper {
+    align-self: center;
+}
+  
+  img {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+  }
+
