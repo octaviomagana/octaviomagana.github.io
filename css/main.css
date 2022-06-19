@@ -1,3 +1,15 @@
+:root {
+    /* variables de color */
+    --orange: #F7931A;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey:#BABABA;
+    --just-white: #FFFFFF;
+
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,8 +64,9 @@ header li {
     margin: 0 5px 0;
 }
 
+
 hr {
-    color: lightgray;
+    color: var(--grey);
     margin: 0 10px 0;
 }
 
@@ -90,5 +103,5 @@ footer img {
 }
 
 footer h4 {
-  padding: 5px 0 5px;
+  padding: 5px 5px 5px;
 }

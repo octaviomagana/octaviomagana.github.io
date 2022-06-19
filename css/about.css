@@ -1,0 +1,20 @@
+.header-navigation-about {
+    color: var(--orange);
+}
+
+.body-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.body-grid-div1 { grid-area: 1 / 1 / 2 / 2; }
+.body-grid-div2 { grid-area: 1 / 2 / 2 / 3; }
+
+.body-grid-div1-illustration {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+}
