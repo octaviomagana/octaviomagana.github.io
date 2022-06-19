@@ -7,28 +7,42 @@
 
 html {
         font-size: 62.5%;
-        font-family: 'Alfa Slab One', sans-serif;
+        font-family: 'Roboto Flex', sans-serif;
 }
 
 header{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 280px;
+    height: 500px;
     text-align: center;
 }
 
 .header-image-wrapper {
     align-self: center;
+    padding: 30px 0 30px;
 }
   
   img {
     margin: 0 auto;
-    height: 200px;
+    height: 100px;
     width: auto;
     border-radius: 50%;
   }
 
+  .header--title-container {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+  }
+
+.header-navigation {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+  ul {
+    list-style-type: none;
+  }
