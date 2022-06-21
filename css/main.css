@@ -3,8 +3,9 @@
     --orange: #F7931A;
     --warm-black: #201E1C;
     --black: #282623;
-    --grey:#BABABA;
+    --grey:#e6e6e6;
     --just-white: #FFFFFF;
+    --dark-grey:#BABABA
 
 }
 
@@ -70,7 +71,7 @@ header li {
 
 
 hr {
-    color: var(--grey);
+    border: 1px solid var(--grey);
     margin: 0 10px 0;
 }
 
@@ -107,8 +108,9 @@ body {
 
 .body-div2 h4 {
     margin: 0 auto;
-    font-size: 2.5 rem;
+    font-size: 2rem;
     padding: 10px 20px 10px;
+    color: var(--dark-grey);
 }
 
 .body-div2 hr {
@@ -122,13 +124,13 @@ body {
 
 .body-div2-paragraph1 {
     
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     
 }
 
-.body-div2-paragraph2 .body-div2-paragraph2 {
+.body-div2-paragraph2, .body-div2-paragraph3 {
     
-    font-size: 2.3rem;
+    font-size: 2rem;
     
 }
 
