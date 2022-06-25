@@ -21,7 +21,7 @@
 
 html {
         font-size: 62.5%;
-        font-family: 'Roboto Flex', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: var(--warm-black);
 }
 
@@ -106,7 +106,7 @@ body {
     margin: 0 auto;
 }
 
-.body-grid-div1-illustration {
+.body-div1-illustration {
     margin: 0 auto;
     height: 180px;
 }
@@ -123,15 +123,8 @@ body {
 
 .body-div2 h3 {
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding: 20px 20px 20px;
-}
-
-.body-div2 h4 {
-    margin: 0 auto;
-    font-size: 2rem;
-    padding: 10px 20px 10px;
-    color: var(--dimm-gray);
 }
 
 .body-div2 hr {
@@ -145,11 +138,11 @@ body {
 
 .body-div2-paragraph1 {
     
-    font-size: 2.5rem;
+    font-size: 3rem;
     
 }
 
-.body-div2-paragraph2, .body-div2-paragraph3 {
+.body-div2-paragraph2, .body-div2-paragraph3, .body-div2-paragraph4 {
     
     font-size: 2rem;
     
