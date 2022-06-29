@@ -62,7 +62,7 @@ header {
 }
 
 .header-navigation {
-    padding: 0 0 10px;
+    padding: 10px 5px 10px;
 }
 
 
@@ -100,19 +100,19 @@ body {
     margin: 0 auto;
 }
 
-.header-image-wrapper {
+.body-image-wrapper {
     align-self: center;
     padding: 20px 0 20px;
 }
   
-.header-image-wrapper img {
+.body-image-wrapper img {
     margin: 0 auto;
     height: 180px;
     width: auto;
     border-radius: 50%;
 }
 
-.header--title-container {
+.body--title-container {
     font-size: 2rem;
     font-weight: bold;
     padding: 5px 0 20px;
