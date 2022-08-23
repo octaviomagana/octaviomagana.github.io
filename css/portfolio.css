@@ -1,3 +1,29 @@
 .header-navigation-portfolio {
     color: var(--orange);
 }
+
+
+.body-div2-table-1 {
+    padding: 10px 10px 10px;
+    border: 0px;
+    
+}
+
+
+.body-div2-table-1-col1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.body-div2-table-1-col2 {
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+
+.body-div2-table-1 th, td {
+    padding: 15px;
+    vertical-align: top;
+  }
