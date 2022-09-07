@@ -4,6 +4,8 @@
 
 
 .body-nav {
+    min-width: 320px;
+    max-width: 768px;
     margin: 0 auto;
     font-size: 2rem;
     padding: 20px 20px 20px;
@@ -15,14 +17,13 @@
 }
 
 
-.body-section1 .body-section2{
-   
-    text-align: justify;
+.body-wrapper {
+    
     min-width: 320px;
     max-width: 768px;
     padding-left: 10px;
     padding-right: 10px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .body-wrapper h3 {
