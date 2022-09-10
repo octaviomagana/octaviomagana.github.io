@@ -169,6 +169,12 @@ body {
     font-size: 1.8rem;
 }
 
+.body-div2 iframe {
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    font-size: 1.8rem;
+}
+
 .body-div2-paragraph1 {
     
     font-size: 3rem;
