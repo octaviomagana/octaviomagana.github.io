@@ -1,3 +1,5 @@
 .header-navigation-about {
     color: var(--orange);
 }
+
+#more {display: none;}
