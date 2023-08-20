@@ -169,7 +169,7 @@ button {
 }
 
 .body-div2 hr {
-    border: 1px solid var(--orange);
+    border: 0.5px solid var(--orange);
 }
 
 .body-div2 p {

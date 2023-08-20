@@ -34,7 +34,7 @@
 }
 
 .body-wrapper hr {
-    border: 1px solid var(--orange);
+    border: 0.5px solid var(--orange);
 }
 
 
@@ -201,6 +201,33 @@
 
 
 .body-section6 .body-section6-table-1 th, td {
+    padding: 15px;
+    vertical-align: top;
+  }
+
+  /*Section 7 Style*/
+
+.body-section7 .body-section7-table-1 {
+    padding: 10px 10px 10px;
+    border: 0px;
+    
+}
+
+
+.body-section7 .body-section7-table-1-col1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.body-section7 .body-section7-table-1-col2 {
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+
+.body-section7 .body-section7-table-1 th, td {
     padding: 15px;
     vertical-align: top;
   }
