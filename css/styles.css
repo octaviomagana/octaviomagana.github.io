@@ -27,20 +27,23 @@ html {
 }
 
 a:link {
-    color: var(--orange);
+    color: var(--dark-grey);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }
 
 a:visited {
     color: var(--dark-grey);
-}
-
-a:hover {
-    color: var(--dimm-gray);
+    text-decoration: none;
 }
 
 a:active {
     color: var(--dark-grey);
+    text-decoration: underline;
 }
 
 
