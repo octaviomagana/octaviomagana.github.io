@@ -27,20 +27,23 @@ html {
 }
 
 a:link {
-    color: var(--orange);
+    color: var(--dark-grey);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }
 
 a:visited {
     color: var(--dark-grey);
-}
-
-a:hover {
-    color: var(--dimm-gray);
+    text-decoration: none;
 }
 
 a:active {
     color: var(--dark-grey);
+    text-decoration: underline;
 }
 
 
@@ -169,7 +172,7 @@ button {
 }
 
 .body-div2 hr {
-    border: 1px solid var(--orange);
+    border: 0.5px solid var(--orange);
 }
 
 .body-div2 p {
@@ -196,7 +199,11 @@ button {
     
 }
 
-
+.body-div2-paragraph4-bullet-list {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 20px 10px 20px 70px;
+}
 
 footer {
   display: flex;
