@@ -1,13 +1,25 @@
 :root {
-    /* variables de color */
+    /* Primary Colors */
     --orange: #F7931A;
     --warm-black: #201E1C;
     --black: #282623;
+
+    /* Secondary Colors */
     --grey:#e6e6e6;
     --just-white: #FFFFFF;
     --dark-grey:#5A5A5A;
+
+    /* Accent Colors */
     --dimm-gray: #A9A9A9;
     --light-gray: #fafafa;
+  
+    /* Additional Colors */
+    --light-orange: #FFD38C; 
+    --dark-orange: #B74E19; 
+    --light-warm-black: #393633; 
+    --dark-warm-black: #131110;
+    --light-black: #312E2B;
+    --dark-black: #1D1C1A;
 
 }
 
@@ -27,24 +39,24 @@ html {
 }
 
 a:link {
-    color: var(--dark-grey);
-    text-decoration: none;
-}
-
-a:hover {
     color: var(--orange);
-    text-decoration: underline;
-}
-
-a:visited {
-    color: var(--dark-grey);
     text-decoration: none;
-}
-
-a:active {
-    color: var(--dark-grey);
+  }
+  
+  a:hover {
+    color: var(--warm-black);
     text-decoration: underline;
-}
+  }
+  
+  a:visited {
+    color: var(--dimm-gray);
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: var(--light-warm-black);
+    text-decoration: underline;
+  }
 
 
 header {
@@ -166,8 +178,8 @@ button {
 
 .body-div2 h3 {
     margin: 0 auto;
-    font-size: 2.5rem;
-    padding: 20px 20px 20px;
+    font-size: 2rem;
+    padding: 20px 20px 5px;
     
 }
 
@@ -178,7 +190,7 @@ button {
 .body-div2 p {
     margin: 0 auto;
     padding: 20px 20px 20px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .body-div2 iframe {
