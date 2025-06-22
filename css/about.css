@@ -1,5 +1,9 @@
 .header-navigation-about {
-    color: var(--orange);
+    color: var(--medium-purple);
+}
+
+.body-div1 img {
+    border-radius: 50%;
 }
 
 #more {display: none;}
