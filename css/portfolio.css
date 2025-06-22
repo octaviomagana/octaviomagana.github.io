@@ -1,5 +1,5 @@
 .header-navigation-portfolio {
-    color: var(--orange);
+    color: var(--medium-purple);
 }
 
 
@@ -34,7 +34,7 @@
 }
 
 .body-wrapper hr {
-    border: 0.5px solid var(--orange);
+    border: 0.5px solid var(--medium-purple);
 }
 
 
