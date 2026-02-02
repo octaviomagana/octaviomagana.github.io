@@ -1,21 +1,22 @@
 :root {
+    /* Premium 'Ink & Bone' Palette */
+    --color-ink: #1a1a1a;
+    /* Deep charcoal for text and accents */
+    --color-bone: #fdfdfc;
+    /* Off-white for page background */
+    --color-paper: #ffffff;
+    /* Pure white for cards/layers */
+    --color-clay: #f4f4f2;
+    /* Subtle neutral for secondary backgrounds */
+    --color-slate-muted: #64748b;
+    /* For secondary text */
+    --color-accent: #334155;
+    /* Professional slate accent */
+    --border-ink-subtle: rgba(26, 26, 26, 0.1);
 
-    /* Primary Colors */
-    --light-purple: #CBC3E3; /* Light lilac from the gradient*/
-    --medium-purple: #9A8CD0; /* A mid-tone purple from the gradient */
-    --dark-grey-blue: #4A556A; /* The color of the geometric lines */
-
-    /* Secondary Colors */
-    --off-white: #F7F7F7; /* Inspired by the white side of the gradient */
-    --light-grey: #E0E0E0; /* A neutral light grey */
-    --medium-grey: #A0AEC0; /* A medium grey for contrast */
-
-    /* Accent Colors */
-    --light-blue: #90CDF4; /* The small light blue accents */
-    --dark-blue: #4299E1; /* A deeper shade of the light blue */
-    --dark-text: #2D3748; /* A dark, legible color for text (can replace your --black) */
-    
-
+    /* Typography Scale */
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
 }
 
 
@@ -24,30 +25,47 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-    }
+
+}
 
 html {
-        font-size: 62.5%;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400; /* Regular weight */
-        color: var(--dark-text);
+    font-size: 62.5%;
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-bone);
+    line-height: 1.6;
 }
 
-body, strong, h1, h2, h3, p {
+body {
+    display: block;
+    /* Removing previous flex rules for a more intentional layout */
     margin: 0;
     padding: 0;
-    font-weight: 700; /* Bold weight */
 }
 
-a:link {
-    color: var(--medium-purple);
-    text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+a {
+    transition: all 0.2s ease;
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--border-ink-subtle);
 }
 
 a:hover {
-    color: var(--dark-text);
-    text-decoration: underline;
+    text-decoration-color: var(--color-ink);
+    opacity: 0.8;
 }
 
 a:visited {
@@ -60,11 +78,11 @@ a:active {
     text-decoration: underline;
 }
 
-  a:focus {
+a:focus {
     outline: 2px solid var(--medium-purple);
     outline-offset: 2px;
     text-decoration: underline;
-  }
+}
 
 
 header {
@@ -76,8 +94,8 @@ header {
     min-width: 320px;
     height: 55px;
     text-align: center;
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
     background-color: var(--off-white);
 }
 
@@ -89,7 +107,7 @@ header {
 
 header ul {
     list-style-type: none;
-    
+
 }
 
 header li {
@@ -115,32 +133,74 @@ body {
 }
 
 
-button {
-    background-color: var(--medium-purple);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+.btn-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    justify-content: center;
+    /* Ensures buttons are centered within the group */
+}
+
+.btn-premium {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-ink {
+    background-color: var(--color-ink);
+    color: var(--color-bone);
+}
+
+.btn-ink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-ink);
+    border: 1px solid var(--color-ink);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-ink);
+    color: var(--color-bone);
+    opacity: 1;
+}
 
 .body-image-wrapper {
     align-self: center;
     padding: 20px 0;
-    width: 100%; /* Ensure the wrapper itself takes full available width */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    width: 100%;
+    /* Ensure the wrapper itself takes full available width */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
 }
-  
+
 .body-image-wrapper img {
-    display: block; /* Remove extra space below image, treat as a block element */
-    width: 100%; /* Make the image take 100% of its parent's width */
-    height: auto; /* Allow the height to scale proportionally with the width */
-    max-width: 100%; /* Ensure it doesn't exceed its natural size if larger */
-    max-height: 100px; /* Example: Limit image height to a maximum of 400px */
+    display: block;
+    /* Remove extra space below image, treat as a block element */
+    width: 100%;
+    /* Make the image take 100% of its parent's width */
+    height: auto;
+    /* Allow the height to scale proportionally with the width */
+    max-width: 100%;
+    /* Ensure it doesn't exceed its natural size if larger */
+    max-height: 100px;
+    /* Example: Limit image height to a maximum of 400px */
     object-fit: cover;
-    object-position: center; /* Optional: Adjusts the focus of the cropped image (e.g., 'center', 'top', 'bottom') */
+    object-position: center;
+    /* Optional: Adjusts the focus of the cropped image (e.g., 'center', 'top', 'bottom') */
 }
 
 
@@ -187,7 +247,7 @@ button {
     margin: 0 auto;
     font-size: 2rem;
     padding: 20px 20px 5px;
-    
+
 }
 
 .body-div2 hr {
@@ -207,15 +267,18 @@ button {
 }
 
 .body-div2-paragraph1 {
-    
+
     font-size: 3rem;
-    
+
 }
 
-.body-div2-paragraph2, .body-div2-paragraph3, .body-div2-paragraph4, .body-div2-paragraph5 {
-    
+.body-div2-paragraph2,
+.body-div2-paragraph3,
+.body-div2-paragraph4,
+.body-div2-paragraph5 {
+
     font-size: 2rem;
-    
+
 }
 
 .body-div2-paragraph4-bullet-list {
@@ -225,7 +288,7 @@ button {
 }
 
 footer {
-  display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -236,16 +299,16 @@ footer {
 }
 
 .footer-navigation {
-  padding: 10px 0 10px;
+    padding: 10px 0 10px;
 }
 
 footer ul {
-  padding: 10px 0 10px;
+    padding: 10px 0 10px;
 }
 
 footer li {
-  display: inline-flex;
-  margin: 0 5px 0;
+    display: inline-flex;
+    margin: 0 5px 0;
 }
 
 footer img {
@@ -255,5 +318,5 @@ footer img {
 }
 
 footer h4 {
-  padding: 5px 5px 5px;
+    padding: 5px 5px 5px;
 }
